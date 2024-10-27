@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send a Message</title>
+    <style>
+        body { display: flex; justify-content: center; align-items: center; height: 100vh; font-family: Arial, sans-serif; background-color: #FFD700; }
+        .message-form { width: 300px; padding: 20px; background-color: #fff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); border-radius: 10px; text-align: center; }
+        .message-form h2 { margin-top: 0; }
+        .message-form input[type="text"], .message-form textarea { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; }
+        .message-form button { width: 100%; padding: 10px; border: none; background-color: #000; color: #fff; border-radius: 5px; font-weight: bold; cursor: pointer; }
+        .message-form button:hover { background-color: #333; }
+    </style>
+</head>
+<body>
+    <div class="message-form">
+        <h2>Send a Message</h2>
+        <input type="text" placeholder="Phone Number" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+    <script>
+        function sendMessage() {
+            // Simulate sending message
+            window.location.href = "confirmation.html"; // Redirect to confirmation.html after sending message
+        }
+    </script>
+</body>
+</html>
